@@ -1,0 +1,17 @@
+
+#mern path{
+
+    animation: fill 1s ease forwards 2s
+
+}
+
+@keyframes fill {
+    from {
+        fill: transparent;
+    }
+    to {
+        fill: #82FFC3;
+    }
+}
+
+
