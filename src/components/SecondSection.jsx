@@ -43,7 +43,7 @@ const SecondSection = ({ setActiveLink }) => {
     }
 
     return (
-        <div id="about" ref={container} className='h-full min-h-[100vh] w-full bg-slate-800 text-white p-2 '>
+        <div id="about" ref={container} className='h-full min-h-[100vh] w-full bg-gradient-to-b from-slate-800 to-slate-900 text-white p-2 '>
             <div className='max-w-[1100px] m-auto md:text-xl '>
                 <h2 className='text-center pt-7 text-green-400 text-4xl pb-2'>About Me</h2>
                 <p className='text-center'>Masum Billah | <a className='underline decoration-sky-400' href= "mailto: masummim50@gmail.com"> masummim50@gmail.com</a> </p>

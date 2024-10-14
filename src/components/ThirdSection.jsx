@@ -45,7 +45,7 @@ const ThirdSection = ({ setActiveLink }) => {
 
     return (
 
-        <div id="skills" ref={container} className="min-h-[100vh] w-[100%] bg-slate-900 relative  overflow-hidden rounded-t-3xl">
+        <div id="skills" ref={container} className="min-h-[100vh] w-[100%] bg-gradient-to-b from-slate-900 to-slate-800 relative  overflow-hidden">
             {/* <motion.div style={{scale: scaleFirst}} className="absolute top-0 bg-black h-[100%] w-[25%]"></motion.div>
             <motion.div style={{scale: scaleSecond}} className="absolute top-0 left-[25%] bg-black h-[100%] w-[25%]"></motion.div> */}
             <motion.div style={{ scaleY: scaleFirst }} initial={{ scaleY: 1.1 }} className="absolute top-0 z-20 bg-black h-[100%] w-[25%] origin-bottom"></motion.div>
@@ -54,7 +54,7 @@ const ThirdSection = ({ setActiveLink }) => {
             <motion.div style={{ scaleY: scaleFourth }} initial={{ scaleY: 1.8 }} className="absolute top-0 z-20 left-[75%] bg-black h-[100%] w-[25%] origin-bottom"></motion.div>
 
 
-            <h2 className='text-center text-6xl underline text-green-400 my-6'>Skills</h2>
+            <h2 className=' underline my-6 text-center pt-7 text-green-400 text-4xl pb-2'>Skills</h2>
 
             <div className="max-w-[1100px] m-auto p-2">
                 <div className="grid grid-cols-4 gap-2 md:grid-cols-6">
