@@ -1,6 +1,6 @@
+import { motion } from 'framer-motion';
+import { PropTypes } from 'prop-types';
 import { useState } from "react";
-import { motion } from 'framer-motion'
-import { PropTypes } from 'prop-types'
 
 const links = [
     { title: 'Home', src: "home" },
@@ -15,7 +15,7 @@ const Header = ({ activeLink, setActiveLink }) => {
     const [isActive, setActive] = useState(false);
     const handleScroll = (sectionId) => {
         if (sectionId === 'home') {
-            window.scrollTo({top:0, behavior:'smooth'});
+            window.scrollTo({ top: 0, behavior: 'smooth' });
         } else {
 
 
@@ -28,6 +28,14 @@ const Header = ({ activeLink, setActiveLink }) => {
                 window.history.pushState(null, '', window.location.pathname);
             }
         }
+    };
+
+    const handleLinkClick = (src) => {
+        // Close the menu first
+        setActive(false);
+
+        // Add a slight delay to start scrolling after the menu closes
+        setTimeout(() => handleScroll(src), 300); // Adjust delay as needed for smoother transition
     };
 
     return (
@@ -69,15 +77,14 @@ const Header = ({ activeLink, setActiveLink }) => {
                 <motion.div animate={{ height: isActive ? 'auto' : '0', }} initial={{ height: 0 }} className="fixed z-[99] top-0 left-[50%] translate-x-[-50%]    bg-green-400  w-[550px]  origin-top overflow-hidden rounded-b-md">
                     {
                         links.map((link, index) => (
-                            <motion.a
+                            <motion.div
                                 animate={isActive ? { x: 0, opacity: 1 } : { x: index % 2 === 0 ? '20%' : '-20%', opacity: 0 }} // Animate when the menu is active
                                 initial={{ x: index % 2 === 0 ? '20%' : '-20%', opacity: 0 }} // Initially off-screen
                                 transition={{ delay: isActive ? 0.2 : 0 }}
-                                onClick={() => setActive(!isActive)}
+                                onClick={() => handleLinkClick(link.src)}
                                 key={index}
-                                href={link.src}
-                                className={`w-full h-[50px] relative text-black flex items-center justify-center ${index === 0 ? 'mt-12' : ''}`}
-                            >{link.title}</motion.a>
+                                className={`cursor-pointer w-full h-[50px] relative text-black flex items-center justify-center ${index === 0 ? 'mt-12' : ''}`}
+                            >{link.title}</motion.div>
                         ))
                     }
                 </motion.div>

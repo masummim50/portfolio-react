@@ -1,3 +1,25 @@
+
+:root {
+    --scrollbar-bg: #282a2b;
+    --scrollbar-thumb-bg: #6b6a6c;
+    --scrollbar-thumb-hover-bg: #a9ada9;
+}
 body{
     background-color: white;
+}
+
+.scrollbar {
+    &::-webkit-scrollbar {
+        width: 4px;
+        background-color: var(--scrollbar-bg);
+    }
+
+    &::-webkit-scrollbar-thumb {
+        background-color: var(--scrollbar-thumb-bg); 
+        border-radius: 5px;
+    }
+
+    &::-webkit-scrollbar-thumb:hover {
+        background-color: var(--scrollbar-thumb-hover-bg);
+    }
 }

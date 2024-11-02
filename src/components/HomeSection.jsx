@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion';
-import React from 'react';
+
 import DownloadResumeButton from './DownloadResumeButton';
 import GitHubButton from './GitHubButton';
 import './homesection.css';
@@ -21,10 +21,10 @@ const HomeSection = () => {
 
 
     return (
-        <div id="home" className='h-full w-full bg-slate-900 relative'>
-            <Box/>
+        <div id="home" className='h-full w-full bg-slate-900 relative text-white'>
+            <Box />
 
-            <motion.h2 initial={{opacity: 0}} animate={{opacity: 1}} transition={{delay: 0.5}} className='pt-[80px] text-center text-green-100 text-4xl'>I am Masum,<br/> a</motion.h2>
+            <motion.h2 initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: 0.5 }} className='pt-[80px] text-center text-green-100 text-4xl'>I am Masum, a</motion.h2>
             <div className="flex justify-center items-center ">
 
                 <motion.svg id="mern" initial="hidden" animate="visible"
@@ -39,16 +39,16 @@ const HomeSection = () => {
 
             </div>
 
-            <motion.h2  initial={{opacity: 0}} animate={{opacity: 1}} transition={{delay: 1.5}} className=' text-center text-[#82FFC3] text-3xl'>Stack Developer</motion.h2>
+            <motion.h2 initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: 1.5 }} className=' text-center text-[#82FFC3] text-3xl'>Stack Developer</motion.h2>
 
             <div className="flex w-full justify-center items-center gap-3 mt-4">
-                <GitHubButton/>
-                <LinkedinButton/>
+                <GitHubButton />
+                <LinkedinButton />
 
             </div>
             <div className="flex flex-col items-center">
-                <DownloadResumeButton/>
-                <ViewResumeButton/>
+                <DownloadResumeButton />
+                <ViewResumeButton />
             </div>
 
 
@@ -61,9 +61,9 @@ const HomeSection = () => {
 export default HomeSection;
 
 
-const Box = ()=> {
+const Box = () => {
     return (
-        <motion.div initial={{rotate:0, }} animate={{rotate:360, }} transition={{repeat: Infinity, repeatType:'loop', duration: 5, ease: "linear"}} className='absolute top-[-25vh] left-[-25vh] h-[50vh] w-[50vh] bg-transparent  border-sky-400 opacity-10'>
+        <motion.div initial={{ rotate: 0, }} animate={{ rotate: 360, }} transition={{ repeat: Infinity, repeatType: 'loop', duration: 5, ease: "linear" }} className='absolute top-[-25vh] left-[-25vh] h-[50vh] w-[50vh] bg-transparent  border-sky-400 opacity-10'>
             <div className="absolute top-0 left-0 bg-sky-300 h-2 w-2 rounded-full"></div>
             <div className="absolute top-0 left-[100%] bg-sky-300 h-2 w-2 rounded-full"></div>
             <div className="absolute top-[100%] left-0 bg-sky-300 h-2 w-2 rounded-full"></div>

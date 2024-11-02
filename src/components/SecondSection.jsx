@@ -46,7 +46,7 @@ const SecondSection = ({ setActiveLink }) => {
         <div id="about" ref={container} className='h-full min-h-[100vh] w-full bg-gradient-to-b from-slate-800 to-slate-900 text-white p-2 '>
             <div className='max-w-[1100px] m-auto md:text-xl '>
                 <h2 className='text-center pt-7 text-green-400 text-4xl pb-2'>About Me</h2>
-                <p className='text-center'>Masum Billah | <a className='underline decoration-sky-400' href= "mailto: masummim50@gmail.com"> masummim50@gmail.com</a> </p>
+                <p className='text-center'>Masum Billah | <a className='underline decoration-sky-400' href="mailto: masummim50@gmail.com"> masummim50@gmail.com</a> </p>
                 <p className='text-green-300 text-center'>Self-taught MERN Stack Developer, building dynamic, engaging and full stack web applications.</p>
                 <p className=" mt-[20px] text-4xl text-center leading-3">
                     {sentence.split(" ").map((word, index) => {
@@ -68,7 +68,7 @@ const SecondSection = ({ setActiveLink }) => {
             </div>
 
             <h2 className='text-green-400 text-3xl text-center mt-5'>Services</h2>
-            <ServiceCards/>
+            <ServiceCards />
         </div>
     );
 };
@@ -81,16 +81,18 @@ export default SecondSection;
 
 
 const Word = ({ children, range, progress }) => {
-    const opacity = useTransform(progress, range, [0.3, 1]);
+    const opacity = useTransform(progress, range, [0.1, 1]);
 
 
     return (
         <div className='inline-block'>
             {/* <span className="absolute opacity-20 text-base">{children}</span> */}
             {
-                children === "(n)" ? <div className='flex-grow'></div> : <motion.span style={{ opacity }} className="mr-[6px] text-base">
-                    {children}
-                </motion.span>
+                children === "(n)" ? <div className='flex-grow'></div>
+                    :
+                    <motion.span style={{ opacity }} className="mr-[6px] text-base">
+                        {children}
+                    </motion.span>
             }
 
         </div>
