@@ -368,25 +368,20 @@ export const fullStackProjects = [
         "javascript",
         "tailwindcss",
       ],
+      backEnd: [
+        "nodejs",
+        "expressjs",
+        "javascript",
+        "socketio"
+      ],
 
     },
     importantInfo:
       "Easy to test, No typing Required. A testing account is provided in the login page",
     features: [
-      "homepage featuring popular, newest and discounted products",
-      "product details page with related products section",
-      "user and seller sign up and login",
-      "search and pagination for products",
-      "create store, add edit and delete products",
-      "upload image when creating products (imgbb api used)",
-      "orders page to view and update orders",
-      "add to cart and buy now options",
-      "seller dashboard page -- chart and information for how many products sold, incoming cash, cancellation rate, order stats, recent orders",
-      "user cart page, increase, decrease quantity. select from cart to buy.",
-      "cash on delivery and stripe payment gateway(mock card details provided).",
-      "user orders page to view order stats and mark orders as 'received' ",
-      "once order is marked as delivered able to write or update review for specific products",
-      "light and dark mode",
+      "real time chat with active users",
+      "sign up with unique username only",
+      "chats are temporarily stored in browser, removed when tab is closed",
     ],
   },
 ]

@@ -5,8 +5,9 @@ import { frontenProjects, fullStackProjects } from "./projects";
 
 import { FaCss3Alt, FaHtml5, FaJs, FaNodeJs, FaReact } from 'react-icons/fa';
 import { RiTailwindCssFill } from "react-icons/ri";
-import { SiExpress, SiFirebase, SiJsonwebtokens, SiMongodb, SiMui, SiNextdotjs, SiNextui, SiPostgresql, SiPrisma, SiReactquery, SiRedux, SiTypescript } from 'react-icons/si';
+import { SiExpress, SiFirebase, SiJsonwebtokens, SiMongodb, SiMui, SiNextdotjs, SiNextui, SiPostgresql, SiPrisma, SiReactquery, SiRedux, SiSocketdotio, SiTypescript } from 'react-icons/si';
 import { TbBrandFramerMotion } from "react-icons/tb";
+
 
 export const techIcons = {
   html: <FaHtml5 />,
@@ -30,7 +31,8 @@ export const techIcons = {
   postgresql: <SiPostgresql />,
   prismaorm: <SiPrisma />,
   materialui: <SiMui />,
-  nextui: <SiNextui />
+  nextui: <SiNextui />,
+  socketio: <SiSocketdotio />,
 };
 
 
