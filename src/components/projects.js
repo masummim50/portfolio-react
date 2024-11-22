@@ -357,10 +357,10 @@ export const fullStackProjects = [
     type: 'Full stack',
     image: '/project/chat.webp',
     title: "Anonymous realtime chat application(react)",
-    live: "https://best-buy-nu.vercel.app",
+    live: "https://anonymous-chat-frontend.vercel.app/",
     links: {
-      frontEnd: "https://github.com/masummim50/ecommerce-nextjs14-approuter",
-      backEnd: "https://github.com/masummim50/ecommerce-backend-prisma",
+      frontEnd: "https://github.com/masummim50/anonymous-chat-frontend",
+      backEnd: "https://github.com/masummim50/socket-backend",
     },
     technologies: {
       frontEnd: [
